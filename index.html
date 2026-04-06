@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>autocomplete 属性テストページ</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", "Noto Sans JP", sans-serif;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 24px 16px;
+      background: #fafafa;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 0.25em;
+    }
+    .intro {
+      color: #555;
+      margin-bottom: 2rem;
+      font-size: 0.95rem;
+    }
+    .category-list {
+      list-style: none;
+      padding: 0;
+    }
+    .category-list li {
+      margin-bottom: 8px;
+    }
+    .category-list a {
+      display: block;
+      padding: 12px 20px;
+      background: #fff;
+      border: 1px solid #d0d0d0;
+      border-radius: 8px;
+      color: #1a1a1a;
+      text-decoration: none;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .category-list a:hover {
+      border-color: #4a90d9;
+      box-shadow: 0 0 0 3px rgba(74, 144, 217, 0.15);
+    }
+    .category-list .field-count {
+      color: #888;
+      font-size: 0.85rem;
+      margin-left: 8px;
+    }
+    @media (max-width: 600px) {
+      body { padding: 16px 10px; }
+    }
+  </style>
+</head>
+<body>
+
+<h1>autocomplete 属性テストページ</h1>
+<p class="intro">
+  HTML の <code>autocomplete</code> 属性で指定できる全トークンを網羅したフォームです。<br>
+  1Password などのパスワードマネージャーや、ブラウザの自動補完が各フィールドを正しく認識するか確認できます。<br>
+  カテゴリごとに独立したページに分かれています。
+</p>
+
+<ul class="category-list">
+  <li><a href="/keywords">1. キーワード (on / off)<span class="field-count">(2 fields)</span></a></li>
+  <li><a href="/name">2. 氏名 (Name)<span class="field-count">(7 fields)</span></a></li>
+  <li><a href="/credentials">3. 認証情報 (Credentials)<span class="field-count">(4 fields)</span></a></li>
+  <li><a href="/organization">4. 組織 (Organization)<span class="field-count">(2 fields)</span></a></li>
+  <li><a href="/address-shipping">5. 住所 (Address) — shipping<span class="field-count">(11 fields)</span></a></li>
+  <li><a href="/address-billing">6. 住所 (Address) — billing<span class="field-count">(6 fields)</span></a></li>
+  <li><a href="/credit-card">7. クレジットカード (Credit Card)<span class="field-count">(10 fields)</span></a></li>
+  <li><a href="/transaction">8. 取引 (Transaction)<span class="field-count">(2 fields)</span></a></li>
+  <li><a href="/tel-home">9. 電話番号 (Telephone) — home<span class="field-count">(8 fields)</span></a></li>
+  <li><a href="/tel-work">10. 電話番号 (Telephone) — work<span class="field-count">(2 fields)</span></a></li>
+  <li><a href="/tel-mobile">11. 電話番号 (Telephone) — mobile<span class="field-count">(1 fields)</span></a></li>
+  <li><a href="/tel-fax">12. 電話番号 (Telephone) — fax<span class="field-count">(1 fields)</span></a></li>
+  <li><a href="/tel-pager">13. 電話番号 (Telephone) — pager<span class="field-count">(1 fields)</span></a></li>
+  <li><a href="/contact">14. 連絡先 (Contact)<span class="field-count">(4 fields)</span></a></li>
+  <li><a href="/birthday">15. 誕生日 (Birthday)<span class="field-count">(4 fields)</span></a></li>
+  <li><a href="/misc">16. その他 (Miscellaneous)<span class="field-count">(4 fields)</span></a></li>
+  <li><a href="/section-prefix">17. section- プレフィックスのデモ<span class="field-count">(6 fields)</span></a></li>
+  <li><a href="/webauthn">18. WebAuthn<span class="field-count">(1 fields)</span></a></li>
+</ul>
+
+</body>
+</html>
